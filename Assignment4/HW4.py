@@ -87,13 +87,13 @@ if __name__ == '__main__':
     ######### problem 2 ###########
     N = len(r_df.columns)
     G = np.zeros([2, N])
-    G[0][:18] = 1
-    G[1][:] = 1
+    G[0, :18] = 1
+    G[1, :] = 1
 
     C = cov_df.values
     R = r_df.mean(axis=0).values
     a = 1
-    c = 0.1
+    c = np.array([1, 0.1])
 
     C_inv = LA.inv(C)
     lmbd = LA.inv(np.dot(G, C_inv.dot(G.T))).dot(G.dot(C_inv).dot(R) - 2 * a * c)

@@ -142,12 +142,6 @@ class Quadratures:
         x = np.linspace(x1, xN, N)
         return Quadratures.Riemann_Rule(f, x, a, b, N)
 
-    def get_Mid_Points(a, b, N):
-        x1 = a + (b - a) / N * 1 / 2
-        xN = a + (b - a) / N * (N - 1 / 2)
-        x = np.linspace(x1, xN, N)
-        return x
-
     def Mid_Point_Riemann(f, a, b, N):
         x = Quadratures.get_Mid_Points(a, b, N)
         return Quadratures.Riemann_Rule(f, x, a, b, N)
@@ -157,6 +151,12 @@ class Quadratures:
         xN = b
         x = np.linspace(x1, xN, N)
         return Quadratures.Riemann_Rule(f, x, a, b, N)
+
+    def get_Mid_Points(a, b, N):
+        x1 = a + (b - a) / N * 1 / 2
+        xN = a + (b - a) / N * (N - 1 / 2)
+        x = np.linspace(x1, xN, N)
+        return x
 
     def Riemann_Rule(f, x, a, b, N):
         w = (b - a) / N

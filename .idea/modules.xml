@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/HW.iml" filepath="$PROJECT_DIR$/.idea/HW.iml" />
+      <module fileurl="file://E:/NOTEBOOK/MF796/.idea/MF796.iml" filepath="E:/NOTEBOOK/MF796/.idea/MF796.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Project/.idea/Project.iml" filepath="$PROJECT_DIR$/../Project/.idea/Project.iml" />
+    </modules>
+  </component>
+</project>
